@@ -1,0 +1,76 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<html>
+<head>
+  
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<title>Home Page</title>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+<a  routerLink="/home"  routerLinkActive="active"   class="w3-bar-item w3-button w3-wide"><b><img src="src\app\logo.png" height="50px" width="180px"/> <span style="color:rgba(0,0,0,0)">-</span> <span style="color:#b300b3;font-size:20px">A HOME</span> AWAY FROM HOME</b></a>
+    <div class="w3-right ">
+      <a routerLink="/login"  routerLinkActive="active"   class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
+      <a routerLink="htw" routerLinkActive="active" class="w3-bar-item w3-button"> HOW IT WORKS</a>
+      <a routerLink="/hosts" routerLinkActive="active" class="w3-bar-item w3-button"> HOSTS</a>
+	  <a routerLink="/" routerLinkActive="active" class="w3-bar-item w3-button">ABOUT US</a>
+      <a routerLink="/" routerLinkActive="active" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!--
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a routerLink="/" routerLinkActive="active"href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a routerLink="/" routerLinkActive="active"href="#" onclick="w3_close()" class="w3-bar-item w3-button"><router>LOGIN</router></a>
+  <a routerLink="/" routerLinkActive="active"href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOW IT WORKS</a>
+  <a routerLink="/" routerLinkActive="active"href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOSTS</a>
+  <a routerLink="/" routerLinkActive="active"href="#" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a routerLink="/" routerLinkActive="active"href="#" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>-->
+<br/>
+<br/>
+<router-outlet></router-outlet>
+
+
+<footer class="footer center-align">
+    &copy;copyrights 2018. All Rights Reserved.
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+</body>
+</html>

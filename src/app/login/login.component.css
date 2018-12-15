@@ -1,0 +1,57 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/mac.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.main{
+	background-size:100%;
+	background-image:url('/src\app\img\ab5.jpg');
+	width:100%;
+	padding:200px;
+	text-align:center;
+}
+.footer{
+	background-color:lightgrey;
+	text-align:center;
+	padding:20px;
+}
+a:hover{
+	text-decoration:none;
+}
+.form{
+	background-color:rgba(250,250,250,0);
+	width:35%;
+	margin:auto;
+	padding:50px;
+}
+	.input{
+		width:100%;
+		border:none;
+		padding:10px;
+		height:35px;
+		font-size:15px;
+		margin:10px;
+		border-radius:5px;
+		border-bottom:2px solid rgb(200,200,200);
+		background-color:rgb(230,230,230);
+	}
+	.submit{
+		width:40%;
+		border:none;
+		padding:10px;
+		color:white;
+		border-radius:5px;
+		font-size:15px;
+		background-color:rgb(30,30,250);
+	}

@@ -1,0 +1,43 @@
+
+<div style="background-image:url('/src/app/img/bg.jpeg');background-size:100%;padding-top:100px">
+	<div class="form white-text">
+		<h4 style="text-align:center">Login with...</h4>
+    <br>
+    <div class="center-align">
+        <a href="#" class="fb btn" style="background-color:rgb(0, 45, 179);color:white;text-decoration:none">
+            <i class="fa fa-facebook fa-fw"></i>Facebook
+          </a>
+        <a href="#" class="google btn" style="background-color:rgb(255, 117, 26);color:white;text-decoration:none">
+         <i class="fa fa-envelope fa-fw"></i> Email
+         </a>
+       <a href="#" class="twitter btn" style="background-color:rgb(0, 153, 255);color:white;text-decoration:none">
+           <i class="fa fa-twitter fa-fw"></i>Twitter
+         </a>
+  </div>
+		
+			
+		<hr/>
+      	<h4 class="center-align">OR</h4>
+		<h4 style="text-align:center">Login with your account..</h4>
+		<div class="white-text">
+			<input class="input" type="email" id="email" placeholder="Enter your email..." required>
+		</div>
+		<div class="white-text">
+			<input class="input" type="password" id="pass" placeholder="Enter your password...">
+		</div>
+		<br>
+		<div class="center-align">
+			<input class="submit animated pulse" [routerLink]="['/home']" routerLinkActive="router-link-active"  onclick="signin()" type="submit" id="Submit" value="SIGNIN"><span style="color:white">--OR--</span>
+			<input class="submit" [routerLink]="['/register']" routerLinkActive="router-link-active"    onclick="signup()" style="background-color:rgb(250,30,30)" type="submit" id="Submit" value="SIGNUP">
+			<script>
+				function signup(){
+					window.location.href="register.html"
+				}
+				function signin(){
+					window.location.href="home.html"
+				}
+			</script>
+		</div>
+	</div>
+	<br>
+</div>

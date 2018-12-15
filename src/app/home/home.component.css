@@ -1,0 +1,12 @@
+.d1 {
+    display:block;
+    background-image:url('src\app\home\home.jpg');
+    background-repeat: repeat-x;
+    background-size:100%;
+    width:100%;
+    padding:200px;
+    text-align:center;
+}
+.w3-display-container w3-text-white:hover{
+    zoom: 105.5%;
+}

@@ -1,0 +1,9 @@
+.d1{
+    background-image:url('src\app\reg\reg.jpg');
+    background-size:100%;
+    height: 100%;
+    padding-top:30px
+}
+.container{
+    width:45%;
+}

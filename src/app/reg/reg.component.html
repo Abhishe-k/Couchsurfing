@@ -1,0 +1,49 @@
+<script src="js/jquery.validate.js"></script>
+<script>
+    $(document).ready(function() {
+    M.updateTextFields();
+  });
+        
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Password Matches';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Password does not match';
+  }
+}
+</script><div class="d1">
+  <div  class="container">
+      <h4 class="display-4 center-align white-text">Register Yourself</h4>
+<div class="row center-align">
+    <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" class="col s12">
+        <div class="input-field col s12">
+              <br>
+            <input id="name" name="name"type="text" class="form-control white-text"  formControlName="name"  >
+            <label  class="white-text" for="name"><b><h4>Enter your name</h4></b>
+            </label>
+        </div>
+        <div class="input-field col s12">
+          <br>
+            <input id="email" type="email" class="form-control white-text" formControlName="email" >
+             <label class="white-text" for="email"><b><h4>Enter your Email</h4></b></label>
+             <span class="helper-text" data-error="Not a valid Email" data-success="right"></span>
+           </div>
+           <div class="input-field col s12">
+              <br><input id="password" name="password" class="form-control white-text" type="password" formControlName="passw" onkeyup="check()"  >
+              <label  class="white-text" for="password"><b><h4>Enter Password</h4></b></label>
+            </div>    
+      <div class="input-field col s12">
+          <br><input id="confirm_password" name="confirm_password" type="password" formControlName="rpassw" class="form-control white-text"  onkeyup="check()">
+         <span id='message'></span>
+         <label  class="white-text" for="confirm_password" data-error="Password not match" data-success="Password Match"><b><h4>Confirm Password</h4></b>
+         </label>
+       </div>
+  <div class="center-align"><button type="submit"  [disabled] = "!formdata.valid"  [routerLink]="['/login']" routerLinkActive="router-link-active"  
+    class="waves-effect waves-light btn-large #01579b light-blue darken-4 ">  <i class="medium material-icons left">person</i>SignUp</button></div>
+    </form>
+  </div>
+</div>
+</div>
